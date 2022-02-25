@@ -1,0 +1,19 @@
+{
+  "greeting": {
+    "morning": {
+      "english": "Good Morning",
+      "russian": "Доброе утро",
+      "german": "Guten Morgen"
+    },
+    "afternoon": {
+      "english": "Good Morning",
+      "russian": "Добрый день",
+      "german": "Guten Tag"
+    },
+    "evening": {
+      "english": "Good Afternoon!",
+      "russian": "Добрый вечер",
+      "german": "Guten Abend"
+    }
+  }
+}

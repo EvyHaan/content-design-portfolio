@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/module.css" rel="stylesheet">
+</head>
+
+<body class="container">
+  <div class="wrapper">
+    <nav class="top-nav">
+      <a class="home nav" href="/index.html">EH</a>
+      <a class="work nav" href="/work.html">WORK</a>
+      <a class="hello nav" href="/hello.html">HELLO</a>
+    </nav>
+
+    <main class="main">
+      <h1 class="page-header">Send a note</h1>
+      <div class="main-content">
+        <section class="contact">
+          <form class="contact-form" method="post" action="mailto:evy.haan@gmail.com">
+            <label class="form-label" for="name">Name</label>
+            <input id="name" class="form-input" type="text" name="name" placeholder="Name" required />
+            <label class="form-label" for="email">Email</label>
+            <input id="email" class="form-input" type="text" name="email" placeholder="Email" required />
+            <label class="form-label" for="subject">Subject</label>
+            <input id="subject" class="form-input" type="text" name="subject" placeholder="Subject" required />
+            <label class="form-label" for="message">Note</label>
+            <textarea id="message" class="form-input form-textarea" name="message" placeholder="Write a note..."
+              required></textarea>
+            <button type="submit" class="primary">Send</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h3>Let's connect!</h3>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/evyhaan/"><img class="li-in-bug" src="./assets/LI-In-Bug.png"></a></li>
+      </ul>
+    </footer>
+
+  </div>
+</body>
+
+</html>

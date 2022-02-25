@@ -1,0 +1,132 @@
+/* General */
+* {
+  color: #3e3e3e;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Page & Containers */
+
+html {
+  background-color: #f2f3f4;
+}
+
+.container {
+  box-shadow: 0 0 10px #ddd;
+  background-color:white;
+}
+
+/* Text */
+
+a {
+  color: #007474;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.nav {
+  color: #3e3e3e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav:hover, .nav:active {
+  color: #007474;
+}
+
+.nav:after {
+  text-decoration:underline;
+}
+
+.intro>a:hover, .intro>a:active{
+  color: #007474;
+}
+
+.project>p {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.project-card>a {
+  text-decoration: none;
+}
+
+.clickable-card:hover, .clickable-card:active {
+  box-shadow: 0 0 10px #007474;
+}
+
+.profile-pic {
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.project-card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ddd;
+  background-color: white;
+}
+
+.form-label {
+  border: none;
+  background-color: white;
+}
+
+.form-label:active {
+  box-shadow: 0 0 10px #007474;
+}
+
+.form-label {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+}
+
+.form-input {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #3e3e3e74;
+
+}
+
+button {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  border: none;
+}
+
+.primary {
+  color: white;
+  background-color: #007474;
+}
+
+.primary:active {
+  background-color: #8ca9a9;
+}
+
+/* I like this color #990000 */
