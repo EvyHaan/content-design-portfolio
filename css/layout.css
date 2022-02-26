@@ -79,6 +79,7 @@ html {
   grid-area: footer;
   justify-items: center;
   align-items: end;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 668px) {
