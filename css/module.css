@@ -111,6 +111,31 @@ section {
   margin-left: auto;
 }
 
+.project-details {
+  margin-top: 20px;
+}
+
+.proj-img-single {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proj-img-single>img {
+  border: 1px solid blue;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  margin: 10px;
+}
+
+.proj-img-single>figcaption {
+  border: 1px solid red;
+}
+
+/* .proj-img-double {
+  
+} */
+
 
 
 @media only screen and (min-width: 668px) {
