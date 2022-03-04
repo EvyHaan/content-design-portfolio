@@ -169,7 +169,16 @@ section {
   box-sizing: border-box;
 }
 
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.hero>img {
+  width: 70%;
+  aspect-ratio: 3 / 2;
+}
 
 @media only screen and (min-width: 668px) {
   .project-list {
