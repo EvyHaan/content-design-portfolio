@@ -389,7 +389,7 @@
             contact lenses delivered to a user every 30 days—convince them to try it.</p>
           <br>
           <p>Title: 60 characters max</p>
-          <p>160 characters: 45 characters max</p>
+          <p>Body: 160 characters max</p>
           <br>
           <p><strong>Solution:</strong></p>
           <br>
@@ -417,6 +417,220 @@
             directly with insurers in general. It's an invitation for the user to look into the site deeper or talk to a
             representative about more specific insurance questions.
           </p>
+          <br>
+
+          <!-- Day 12 -->
+          <hr>
+          <h2>Day 12</h2>
+          <br>
+          <p><strong>Scenario:</strong> A user is creating an account. When they come to the step where they are asked
+            to enter their name, they get an error message. A fraud detection software thinks their name is fake—but
+            it’s wrong 5% of the time.</p>
+          <br>
+          <p><strong>Challenge:</strong> Challenge: Write an error message that prompts them to fix the error without
+            shaming them for having a fake-sounding name.</p>
+          <br>
+          <p>45 characters max</p>
+          <br>
+          <p><strong>Solution:</strong></p>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_12.jpg" />
+              <figcaption>Fig 12. Error message for a name input field.</figcaption>
+            </figure>
+          </div>
+          <br>
+          <p><strong>Explanation:</strong></p>
+          <br>
+          <p>We don't know why the fraud detection service is flagging this user's name as fake. For example, the user
+            may try to input a name that does not meet the minimum character count, has special characters like
+            hyphens or spaces, or contains system-reserved key words or derogatory terms. With so many edge cases, and
+            to avoid blaming or shaming the user, I felt the best use of space would be to first, let them know the
+            input could not be accepted, then to direct them to a resource that may help them understand and overcome
+            the issue.</p>
+          <br>
+          <p>I try to remain objective about the issue. Instead of blaming the user and making them feel "unacceptable"
+            based what may be a legitimate name, I directly say the input doesn't fit our latest policy. "Latest" felt
+            important to include, because I want them to have some sense that it's a living document, it's open to
+            growth and we're continually trying to improve. Then I link them to the policy documents where they learn
+            how their name falls outside of the policy, and steps to take to alleviate the issue right now, and a
+            space to provide feedback on how we can improve our policy for future users.</p>
+          <br>
+          <p>I will be honest, I'm not confident in the messaging I came up with for this challenge. This would have to
+            be a well-coordinated team effort between myself as the UX Writer and the PM, engineering team (How granular
+            are the error messages they recieve from the fraud detection API), customer suppor team (What are the most
+            common reasons? What improvements are customers asking for?), legal team (What can we allow, and how do we
+            need to communicate it?), and others.</p>
+          <br>
+          <!-- Day 13 -->
+          <hr>
+          <h2>Day 13</h2>
+          <br>
+          <p><strong>Scenario:</strong> A short-haul truck driver has a phone app that monitors his route, schedule,
+            fuel & deliveries.</p>
+          <br>
+          <p>He has 6 more deliveries before stopping for fuel and lunch. Due to unexpected traffic, he’s behind
+            schedule.</p>
+          <br>
+          <p>He can choose to stay on his planned route for a few more stops, but risk running low on fuel and missing
+            lunch, or he can get fuel and lunch now and finish the deliveries later.</p>
+          <br>
+          <p><strong>Challenge:</strong> Write a push notification alerting him of this dilemma and options.</p>
+          <br>
+          <p>Title: 30 characters max</p>
+          <p>Body: 45 characters max</p>
+          <p>Button(s): 25 characters max</p>
+          <br>
+          <p><strong>Solution:</strong></p>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_13.jpg" />
+              <figcaption>Fig 13. Push notification for a delivery schedule management app.
+          </div>
+          <br>
+          <p><strong>Explanation:</strong></p>
+          <br>
+          <p>It's high probability that the truck driver is operating their vehicle in the moment this notification pops
+            up. With that in mind, I wanted to keep the information as minimal and direct as possible. I want to convey
+            what the situation is ahead, what their current status is, and their options in as few words as possible so
+            that their eyes are not off the road for long.</p>
+          <br>
+          <!-- Day 14 -->
+          <hr>
+          <h2>Day 14</h2>
+          <br>
+          <p><strong>Scenario:</strong> A user is shopping using a price comparison app that boasts “real-time” pricing
+            on items. As they are checking the price of an item, something goes wrong. The problem is unknown.</p>
+          <br>
+          <p>write a message that informs the user that they cannot access the app right now. You cannot specify "why"
+            the app doesn't work, you also want them to continue using the app.</p>
+          <br>
+          <p><strong>Challenge:</strong> Write a push notification alerting him of this dilemma and options.</p>
+          <br>
+          <p>Title: 30 characters max</p>
+          <p>Body: 120 characters max</p>
+          <p>Button(s): 15 characters max</p>
+          <br>
+          <p><strong>Solution:</strong></p>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_14.jpg" />
+              <figcaption>Fig 14. Unknown error message for an price-comparison app.</figcaption>
+          </div>
+          <br>
+          <p><strong>Explanation:</strong></p>
+          <br>
+          <p>This is likely going to be a result of a 500 Internal Server Error, so it's unfortunate that we can't
+            communicate to the user exactly what the issue is. At minimum we need to communicate that there was a
+            problem, and see if we can't offer the user some steps around it.</p>
+          <br>
+          <p>In the headline, I assure the user it wasn't them. They didn't do anything wrong, something just didn't
+            work like it was supposed to. The body follows with some troubleshooting suggestions. They are in order of
+            potential complexity of the underlying issue and amount of user effort required.</p>
+          <br>
+          <p>Even after trying the different options, the screen still may not be able to load. By this time, DevOps
+            should
+            have recieved a report about the issue, and have developers assigned to address the issue. Without being too
+            technical or overstating this, I let the user know we are working on a fix and really we just need a bit of
+            time and patience.</p>
+          <br>
+          <!-- Day 15 -->
+          <hr>
+          <h2>Day 15</h2>
+          <br>
+          <p><strong>Scenario:</strong> Write a multi-screen onboarding experience for a banking app that automatically
+            pays a user's bills every month—as long as they set it up correctly.</p>
+          <br>
+          <p>write a message that informs the user that they cannot access the app right now. You cannot specify "why"
+            the app doesn't work, you also want them to continue using the app.</p>
+          <br>
+          <p><strong>Challenge:</strong> Write a push notification alerting him of this dilemma and options.</p>
+          <br>
+          <p>Title: 45 characters max</p>
+          <p>Body: 100 characters max</p>
+          <p>Button(s): 25 characters max</p>
+          <br>
+          <p><strong>Preface:</strong></p>
+          <br>
+          <p>For the sake of imagining a bit more context - this is a feature already inside a mobile banking app, but
+            the user hasn’t set it up yet (TIL mine has this feature). Let’s say this bank’s mobile app is particularly
+            aimed toward supporting financial wellness and has a lot of tools and widgets a user can set up to feel in
+            control of their money. The voice is approachable, empowering, proactive, and breezy.</p>
+          <br>
+          <p>I could really have used a PM and UX Designer! I went down some scope-creep rabbit holes. Reigned in a bit
+            for the challenge, but I think I will run with some ideas that came out of it for a portfolio concept piece.
+          </p>
+          <br>
+          <p><strong>Solution & Explanation:</strong></p>
+          <br>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_15a.jpg" />
+              <figcaption>Fig 15a. Onboarding introduction.</figcaption>
+          </div>
+          <br>
+          <p>The user taps on a feature promotional widget in their mobile banking app home screen and lands on this
+            feature introduction page. It highlights benefits and ties it with the user’s goal of financial health. The
+            user can either close out with the “X” or “Later” to return to their main banking dashboard. Because the
+            user is already in the app, we already have a lot of information - their name, login, account info, and
+            verified personal information.</p>
+          <br>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_15b.jpg" />
+              <figcaption>Fig 15b. Onboarding introduction.</figcaption>
+          </div>
+          <br>
+          <p>First, the user can choose to set a default account for BillPay to withdraw funds. It may be a fair
+            assumption that many people pay bills out of one account, and setting a default account can help streamline
+            BillPay. However, we want to accommodate users with mixed-structured bank accounts, various financial
+            strategies, and use differences in shared and individual accounts. They can skip this step and choose to
+            assign an account manually per payee when they create new payees (flow not shown). Or maybe they’re still
+            not ready to commit to using this feature yet, and just want to explore if it’s a valuable resource. They
+            are also reminded that any account is still subject to the overdraft policies.</p>
+          <br>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_15c.jpg" />
+              <figcaption>Fig 15c1. Onboarding introduction.</figcaption>
+          </div>
+          <br>
+          <p>Next, the user can add payees. Before they add a new payee, they are told the information they will need to
+            have ready. This can help them decide if they are ready to add a payee now, or to skip and do this later.
+          </p>
+          <br>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_15c2.jpg" />
+              <figcaption>Fig 15c2. Onboarding introduction.</figcaption>
+          </div>
+          <br>
+          <p>After adding a payee, each payee is displayed in expandable cards on the Add Payee onboarding page so the
+            user can quickly review the details (These payee card components would be reused on the BillPay dashboard,
+            to keep consistency and familiarity across the feature).</p>
+          <br>
+          <br>
+          <div class="centered-img-container">
+            <figure>
+              <img src="../images/duxwc/duxwc_15d.jpg" />
+              <figcaption>Fig 15d. Onboarding introduction.</figcaption>
+          </div>
+          <br>
+          <p>Last, BillPay asks the user if they want to pick from a few notification options. BillPay will have all
+            three checked as default, because it believes these would best support the user, at least getting started.
+            For the second option, the user can customize the notification timeframe. The default is set to 5 so the
+            user has time to review account balances to ensure they have sufficient funds and allow time for transfers
+            or to plan around any large purchases in upcoming days. Again, these are optional and the user can skip this
+            step. After Finishing setup they would be taken to the BillPay dashboard directly. Anything they’ve added
+            will reflect there, so they can be assured that the set is up complete without requiring further
+            confirmation interactions.</p>
           <br>
         </section>
       </div>
