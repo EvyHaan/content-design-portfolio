@@ -99,7 +99,7 @@ section {
 
 .contact-form {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
 }
 
@@ -138,6 +138,7 @@ section {
 
 .screenshot figure {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -152,7 +153,8 @@ section {
 }
 
 .screenshot img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
@@ -163,17 +165,9 @@ section {
   border-radius: 3px;
 }
 
-.centered-img-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 @media only screen and (min-width: 668px) {
   .project-list {
     flex-direction: row;
     justify-content: flex-start;
   }
 }
-
-
