@@ -14,30 +14,30 @@ html {
   background-image: url(../images/stripes_green.svg);
   background-repeat: repeat;
   background-attachment: fixed;
-  display:block;
+  display: block;
 }
 
 .container {
   box-shadow: 0 0 10px #ddd;
-  background-color:white;
+  background-color: white;
 }
 
 /* Text */
 
 a {
   color: #007474;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
+  font-size: 40px;
   text-align: center;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 h3 {
@@ -46,27 +46,20 @@ h3 {
   font-weight: bold;
 }
 
-h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-h5 {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-style: italic;
-}
-
-p, li {
+p,
+li {
   font-family: 'Mulish', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5em;
+}
+
+.center {
+  text-align: center;
 }
 
 .link {
   font-family: 'Mulish', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5em;
   color: #007474;
   text-decoration: none;
@@ -88,18 +81,20 @@ p, li {
   color: #3e3e3e;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.nav:hover, .nav:active {
+.nav:hover,
+.nav:active {
   color: #007474;
 }
 
 .nav:after {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
-.intro>a:hover, .intro>a:active{
+.intro>a:hover,
+.intro>a:active {
   color: #007474;
 }
 
@@ -113,7 +108,8 @@ p, li {
   text-decoration: none;
 }
 
-.clickable-card:hover, .clickable-card:active {
+.clickable-card:hover,
+.clickable-card:active {
   box-shadow: 0 0 10px #007474;
 }
 
