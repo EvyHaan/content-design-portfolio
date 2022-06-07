@@ -6,8 +6,11 @@ body {
   height: 100%;
 }
 
-.outtie {
+body * {
   box-sizing: border-box;
+}
+
+.outtie {
   min-height: 100%;
   padding: 48px 24px;
 
@@ -17,7 +20,6 @@ body {
 }
 
 .innie {
-  box-sizing: border-box;
   max-width: 792px;
 
   display: grid;
@@ -30,7 +32,6 @@ body {
 }
 
 .therest {
-  box-sizing: border-box;
   grid-area: therest;
 
   display: flex;
@@ -41,7 +42,6 @@ body {
 /* -------------- Header & Main Nav -------------- */
 
 .headie {
-  box-sizing: border-box;
   grid-area: headie;
 
   display: flex;
@@ -52,7 +52,6 @@ body {
 }
 
 .site-nav {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -62,7 +61,6 @@ body {
 }
 
 .site-header {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -75,7 +73,6 @@ body {
 /* -------------- Main Content -------------- */
 
 .mainie {
-  box-sizing: border-box;
   grid-area: mainie;
 
   display: flex;
@@ -85,7 +82,6 @@ body {
 }
 
 section {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -98,7 +94,6 @@ section {
 /* Section: Content Grid */
 
 .content-grid {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -108,8 +103,7 @@ section {
   gap: 24px;
 }
 
-.image_title {
-  box-sizing: border-box;
+.image_title a {
   width: 100%;
   max-width: 360px;
 
@@ -119,16 +113,38 @@ section {
   gap: 8px;
 }
 
-.image_title img {
-  box-sizing: border-box;
-  max-width: 360px;
-  aspect-ratio: 3 / 2;
+.image_title a:hover {
+  padding: 3px;
 }
+
+.image_title img {
+  max-width: 360px;
+}
+
+.link_icon {
+  width: 100%;
+}
+
+.link_icon a {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link_icon img {
+  width: 24px;
+}
+
 
 /* Section: Article */
 
 article {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -138,7 +154,6 @@ article {
 }
 
 .article-header {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -147,8 +162,13 @@ article {
   gap: 8px;
 }
 
+.article-title,
+.article-subtitle {
+  width: 100%;
+  text-align: center;
+}
+
 .article-body {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
@@ -158,7 +178,6 @@ article {
 }
 
 .body_title_desc {
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -166,7 +185,6 @@ article {
 }
 
 .body_image_caption {
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -174,7 +192,6 @@ article {
 }
 
 .body_title_list {
-  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -183,7 +200,6 @@ article {
 
 /* -------------- FOOTER (SOCIAL LINKS) -------------- */
 .footie {
-  box-sizing: border-box;
   grid-area: footie;
   width: 100%;
 
@@ -195,39 +211,34 @@ article {
 }
 
 .socials-links {
-  box-sizing: border-box;
   width: 100%;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  gap: 24px;
 }
 
 .social-icon {
   height: 24px;
-  padding: 5px;
 }
 
 /* Images */
 .img {
-  box-sizing: border-box;
   min-width: 272px;
   width: 100%;
 }
 
 .landscape {
   max-width: 540px;
-  aspect-ratio: 3 / 2;
 }
 
 .portrait {
   max-width: 360px;
-  aspect-ratio: 3 / 2;
 }
 
 .square {
   max-width: 360px;
-  aspect-ratio: 1 / 1;
 }
 
 /* Texture */
@@ -250,20 +261,56 @@ article {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.article-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.body-regular {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+figcaption {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: 555555;
+}
+
 nav a {
   font-size: 24px;
   font-weight: 500;
-  color: #631494;
+  color: #941487;
 }
 
 nav a:hover {
   font-size: 24px;
   font-weight: 500;
-  color: #09714B;
+  color: #303030;
 }
 
 nav a:active {
   font-size: 24px;
   font-weight: 500;
-  color: #09714B;
+  color: #303030;
+}
+
+a {
+  color: #941487;
 }
