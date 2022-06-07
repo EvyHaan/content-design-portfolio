@@ -1,1 +1,269 @@
+/* Do not change these values. This is the core layout. */
 
+html,
+body {
+  background-color: #fdfdfd;
+  height: 100%;
+}
+
+.outtie {
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innie {
+  box-sizing: border-box;
+  max-width: 792px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+  row-gap: 48px;
+  grid-template-areas:
+    "therest"
+    "footie";
+}
+
+.therest {
+  box-sizing: border-box;
+  grid-area: therest;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 48px
+}
+
+/* -------------- Header & Main Nav -------------- */
+
+.headie {
+  box-sizing: border-box;
+  grid-area: headie;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-nav {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.site-header {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* -------------- Main Content -------------- */
+
+.mainie {
+  box-sizing: border-box;
+  grid-area: mainie;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+section {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Section Components */
+/* Section: Content Grid */
+
+.content-grid {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.image_title {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 360px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.image_title img {
+  box-sizing: border-box;
+  max-width: 360px;
+  aspect-ratio: 3 / 2;
+}
+
+/* Section: Article */
+
+article {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.article-header {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-body {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.body_title_desc {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.body_image_caption {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.body_title_list {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+/* -------------- FOOTER (SOCIAL LINKS) -------------- */
+.footie {
+  box-sizing: border-box;
+  grid-area: footie;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px
+}
+
+.socials-links {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 24px;
+  padding: 5px;
+}
+
+/* Images */
+.img {
+  box-sizing: border-box;
+  min-width: 272px;
+  width: 100%;
+}
+
+.landscape {
+  max-width: 540px;
+  aspect-ratio: 3 / 2;
+}
+
+.portrait {
+  max-width: 360px;
+  aspect-ratio: 3 / 2;
+}
+
+.square {
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+}
+
+/* Texture */
+.indent {
+  padding-left: 2em;
+}
+
+* {
+  color: #303030;
+  font-family: 'Jost', sans-serif;
+}
+
+.site-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #631494;
+}
+
+nav a:hover {
+  font-size: 24px;
+  font-weight: 500;
+  color: #09714B;
+}
+
+nav a:active {
+  font-size: 24px;
+  font-weight: 500;
+  color: #09714B;
+}
