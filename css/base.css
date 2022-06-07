@@ -1,1 +1,316 @@
+/* Do not change these values. This is the core layout. */
 
+html,
+body {
+  background-color: #fdfdfd;
+  height: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.outtie {
+  min-height: 100%;
+  padding: 48px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innie {
+  max-width: 792px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+  row-gap: 48px;
+  grid-template-areas:
+    "therest"
+    "footie";
+}
+
+.therest {
+  grid-area: therest;
+
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 48px
+}
+
+/* -------------- Header & Main Nav -------------- */
+
+.headie {
+  grid-area: headie;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-nav {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.site-header {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+
+/* -------------- Main Content -------------- */
+
+.mainie {
+  grid-area: mainie;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+section {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Section Components */
+/* Section: Content Grid */
+
+.content-grid {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.image_title a {
+  width: 100%;
+  max-width: 360px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.image_title a:hover {
+  padding: 3px;
+}
+
+.image_title img {
+  max-width: 360px;
+}
+
+.link_icon {
+  width: 100%;
+}
+
+.link_icon a {
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.link_icon img {
+  width: 24px;
+}
+
+
+/* Section: Article */
+
+article {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.article-header {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-title,
+.article-subtitle {
+  width: 100%;
+  text-align: center;
+}
+
+.article-body {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.body_title_desc {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.body_image_caption {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.body_title_list {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+/* -------------- FOOTER (SOCIAL LINKS) -------------- */
+.footie {
+  grid-area: footie;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px
+}
+
+.socials-links {
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-icon {
+  height: 24px;
+}
+
+/* Images */
+.img {
+  min-width: 272px;
+  width: 100%;
+}
+
+.landscape {
+  max-width: 540px;
+}
+
+.portrait {
+  max-width: 360px;
+}
+
+.square {
+  max-width: 360px;
+}
+
+/* Texture */
+.indent {
+  padding-left: 2em;
+}
+
+* {
+  color: #303030;
+  font-family: 'Jost', sans-serif;
+}
+
+.site-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.site-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.article-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.body-regular {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+figcaption {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: 555555;
+}
+
+nav a {
+  font-size: 24px;
+  font-weight: 500;
+  color: #941487;
+}
+
+nav a:hover {
+  font-size: 24px;
+  font-weight: 500;
+  color: #303030;
+}
+
+nav a:active {
+  font-size: 24px;
+  font-weight: 500;
+  color: #303030;
+}
+
+a {
+  color: #941487;
+}
