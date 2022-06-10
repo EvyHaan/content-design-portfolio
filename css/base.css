@@ -174,20 +174,20 @@ article {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .body_title_desc {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  gap: 8px;
+  gap: 16px;
 }
 
 .body_image_caption {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   gap: 8px;
 }
 
@@ -238,6 +238,26 @@ article {
 }
 
 .square {
+  max-width: 360px;
+}
+
+.tri-image-display {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  gap: 24px;
+}
+
+.dual-image-display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.dual-image-display figcaption,
+.tri-image-display figcaption {
+  width: 100%;
   max-width: 360px;
 }
 
@@ -313,4 +333,10 @@ nav a:active {
 
 a {
   color: #941487;
+}
+
+@media only screen and (min-width: 668px) {
+  .dual-image-display {
+    flex-flow: row nowrap;
+  }
 }
