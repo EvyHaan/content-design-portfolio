@@ -135,12 +135,17 @@ section {
 .link_icon a {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 
   font-size: 24px;
   font-weight: 500;
+
+  text-decoration: none;
+}
+
+.link_icon a .center {
+  justify-content: center;
 }
 
 .link_icon img {
@@ -294,12 +299,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .article-subtitle {
