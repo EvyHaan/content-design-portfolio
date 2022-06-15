@@ -100,12 +100,18 @@ section {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
+}
+
+.image_title {
+  min-width: 272px;
+  max-width: 360px;
+  height: 248px;
 }
 
 .image_title a {
   width: 100%;
-  max-width: 360px;
+  text-decoration: none;
 
   display: flex;
   flex-flow: column nowrap;
@@ -113,12 +119,18 @@ section {
   gap: 8px;
 }
 
-.image_title a:hover {
-  padding: 3px;
+.image_title h2 {
+  text-align: center;
+}
+
+.image_title a:hover * {
+  color: #941487;
 }
 
 .image_title img {
+  min-width: 272px;
   max-width: 360px;
+  max-height: 240px;
 }
 
 .link_icon {
@@ -126,18 +138,34 @@ section {
 }
 
 .link_icon a {
-
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 
   font-size: 24px;
   font-weight: 500;
+
+  text-decoration: none;
+}
+
+.link_icon a[class="center"] {
+  justify-content: center;
 }
 
 .link_icon img {
+  width: 24px;
+}
+
+.icon_text {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon_text img {
   width: 24px;
 }
 
@@ -174,20 +202,20 @@ article {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .body_title_desc {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  gap: 8px;
+  gap: 16px;
 }
 
 .body_image_caption {
   width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   gap: 8px;
 }
 
@@ -227,6 +255,8 @@ article {
 .img {
   min-width: 272px;
   width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .landscape {
@@ -238,6 +268,27 @@ article {
 }
 
 .square {
+  max-width: 360px;
+  border-radius: 24px;
+}
+
+.tri-image-display {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
+  gap: 24px;
+}
+
+.dual-image-display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.dual-image-display figcaption,
+.tri-image-display figcaption {
+  width: 100%;
   max-width: 360px;
 }
 
@@ -268,12 +319,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .article-subtitle {
@@ -283,7 +334,7 @@ h3 {
 
 .body-regular {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 figcaption {
@@ -296,21 +347,38 @@ figcaption {
 nav a {
   font-size: 24px;
   font-weight: 500;
-  color: #941487;
+  color: #1F9EC7;
+  text-decoration: none;
 }
 
 nav a:hover {
   font-size: 24px;
   font-weight: 500;
-  color: #303030;
+  color: #941487;
 }
 
 nav a:active {
   font-size: 24px;
   font-weight: 500;
-  color: #303030;
+  color: #941487;
 }
 
-a {
+a,
+a h2 {
+  color: #1F9EC7;
+}
+
+a:hover {
   color: #941487;
+}
+
+@media only screen and (min-width: 668px) {
+  .dual-image-display {
+    flex-flow: row nowrap;
+  }
+
+  .image_title {
+    height: 336px;
+  }
+
 }
