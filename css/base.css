@@ -100,7 +100,7 @@ section {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 64px;
 }
 
 .image_title {
