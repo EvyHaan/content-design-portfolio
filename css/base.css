@@ -100,12 +100,13 @@ section {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 32px;
 }
 
 .image_title {
-  width: 360px;
-  height: 280px;
+  min-width: 272px;
+  max-width: 360px;
+  height: 248px;
 }
 
 .image_title a {
@@ -118,12 +119,16 @@ section {
   gap: 8px;
 }
 
+.image_title h2 {
+  text-align: center;
+}
+
 .image_title a:hover * {
-  color: #1F9EC7;
-  padding: 3px;
+  color: #941487;
 }
 
 .image_title img {
+  min-width: 272px;
   max-width: 360px;
   max-height: 240px;
 }
@@ -358,7 +363,8 @@ nav a:active {
   color: #941487;
 }
 
-a {
+a,
+a h2 {
   color: #1F9EC7;
 }
 
@@ -370,4 +376,9 @@ a:hover {
   .dual-image-display {
     flex-flow: row nowrap;
   }
+
+  .image_title {
+    height: 336px;
+  }
+
 }
