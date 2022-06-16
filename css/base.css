@@ -101,15 +101,12 @@ section {
   align-items: center;
   justify-content: center;
   gap: 48px;
-
-  border: 1px solid hotpink;
 }
 
 .image_title {
   min-width: 272px;
   max-width: 360px;
   height: 336px;
-  border: 1px solid palegreen;
 }
 
 .image_title a {
@@ -121,8 +118,6 @@ section {
   flex-flow: column nowrap;
   align-items: center;
   gap: 8px;
-
-  border: 1px solid yellow;
 }
 
 .image_title h2 {
