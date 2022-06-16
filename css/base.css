@@ -100,23 +100,29 @@ section {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 48px;
+
+  border: 1px solid hotpink;
 }
 
 .image_title {
   min-width: 272px;
   max-width: 360px;
-  height: 248px;
+  height: 336px;
+  border: 1px solid palegreen;
 }
 
 .image_title a {
   width: 100%;
+  height: 100%;
   text-decoration: none;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 8px;
+
+  border: 1px solid yellow;
 }
 
 .image_title h2 {
@@ -375,10 +381,6 @@ a:hover {
 @media only screen and (min-width: 668px) {
   .dual-image-display {
     flex-flow: row nowrap;
-  }
-
-  .image_title {
-    height: 336px;
   }
 
 }
